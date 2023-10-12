@@ -1,6 +1,11 @@
 # Editor configurations
 .vs/
 .vscode/
+CMakeSettings.json
+
+# Build directory
+out/
+build/
 
 # Prerequisites
 *.d
