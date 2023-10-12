@@ -1,3 +1,7 @@
+# Editor configurations
+.vs/
+.vscode/
+
 # Prerequisites
 *.d
 
