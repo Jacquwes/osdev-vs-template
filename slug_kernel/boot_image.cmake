@@ -1,8 +1,3 @@
-add_custom_command(
-	TARGET kernel POST_BUILD
-	COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:kernel> ${CMAKE_SOURCE_DIR}/iso/boot/kernel
-)
-
 set(ISO_DIR ${CMAKE_CURRENT_BINARY_DIR}/iso)
 set(LIMINE_DIR ${CMAKE_SOURCE_DIR}/limine)
 
