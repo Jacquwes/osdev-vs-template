@@ -1,6 +1,7 @@
 set(ISO_DIR ${CMAKE_CURRENT_BINARY_DIR}/iso)
 set(LIMINE_DIR ${CMAKE_SOURCE_DIR}/limine)
 
+# convenience target to build the kernel image
 add_custom_target(
 	bootable_image
 	COMMAND rm -rf ${ISO_DIR}
