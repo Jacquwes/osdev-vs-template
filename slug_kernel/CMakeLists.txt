@@ -1,5 +1,6 @@
 project(kernel)
 
+# basic cmake setup
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -35,4 +36,5 @@ target_link_options(
 	PUBLIC "-T${CMAKE_SOURCE_DIR}/slug_kernel/linker.ld"
 )
 
+# include the boot image cmake file
 include(boot_image.cmake)
