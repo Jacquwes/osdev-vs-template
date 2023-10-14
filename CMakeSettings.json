@@ -1,0 +1,31 @@
+﻿{
+  "configurations": [
+    {
+      "buildCommandArgs": "",
+      "cmakeCommandArgs": "",
+      "cmakeExecutable": "cmake",
+      "cmakeToolchain": "$HOME/.vs/${projectDirName}/${workspaceHash}/src/toolchain.cmake",
+      "configurationType": "Debug",
+      "ctestCommandArgs": "",
+      "generator": "Ninja",
+      "inheritEnvironments": [ "linux_x64" ],
+      "name": "Linux-GCC-Debug",
+      "remoteBuildRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/out/build/${name}",
+      "remoteCMakeListsRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/src",
+      "remoteCopyBuildOutput": true,
+      "remoteCopySources": true,
+      "remoteCopySourcesExclusionList": [ ".vs", ".git", "out" ],
+      "remoteCopySourcesMethod": "rsync",
+      "remoteInstallRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/out/install/${name}",
+      "remoteMachineName": "${defaultRemoteMachineName}",
+      "rsyncCommandArgs": "-t --delete",
+      "variables": [
+        {
+          "name": "TOOLCHAIN_PATH",
+          "value": "PATH-TO-DIRECTORY-THAT-HOST-bin/-AND-lib/-OF-CROSS-COMPILER",
+          "type": "STRING"
+        }
+      ]
+    }
+  ]
+}

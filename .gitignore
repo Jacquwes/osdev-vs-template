@@ -1,7 +1,10 @@
 # Editor configurations
-.vs/
+
+# Ignore any file in .vs/ but launch.vs.json
+.vs/*
+!.vs/launch.vs.json
+
 .vscode/
-CMakeSettings.json
 
 # Build directory
 out/
